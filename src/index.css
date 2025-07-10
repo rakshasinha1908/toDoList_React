@@ -1,0 +1,177 @@
+/* :root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+*/
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4eae6;
+}
+
+.outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  height: 62%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.title h1 {
+  font-size: 36px;
+  color: #2f5061; /* Misty Blue */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #2f5061;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+
+.task {
+  display: flex;
+  background-color: #f4eae6; /* Ivory */
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  padding: 10px 15px;
+  margin-bottom: 12px;
+  border: 1px solid #4297a0;
+}
+
+.next {
+  font-size: 16px;
+  font-weight: 500;
+  color: #2f5061;
+  padding-left: 10px;
+  background-color: #f4eae6;
+  border: none;
+  width: 60%;
+}
+
+.next:focus {
+  outline: none;
+}
+
+.add-button {
+  background-color: transparent;
+  border: none;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #4297a0;
+  transition: background-color 0.2s;
+  border-radius: 0 50px 50px 0;
+}
+
+.add-button:hover {
+  background-color: #4297a0;
+  color: white;
+  border-radius: 0 50px 50px 0;
+}
+
+p {
+  color: #2f5061;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.task-list-wrapper {
+  max-height: 350px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.task-list-wrapper::-webkit-scrollbar {
+  width: 6px;
+}
+
+.task-list-wrapper::-webkit-scrollbar-thumb {
+  background-color: #33565a;
+  border-radius: 20px;
+}
+
+.tasks {
+  display: flex;
+  align-items: center;
+  background-color: #f4eae6; /* Ivory */
+  height: 45px;
+  border-radius: 50px;
+  padding: 0 10px;
+  border: 1px solid #4297a0;
+  margin-bottom: 6px;
+}
+
+.task-title {
+  flex: 1;
+  font-weight: 500;
+  font-size: 16px;
+  color: #2f5061;
+  padding-left: 10px;
+}
+
+.circle {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: #4297a0; /* Teal Green */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.circle:hover {
+  background-color: #2f5061; /* Misty Blue */
+}
+
+.icon {
+  font-size: 16px;
+  color: white;
+}
+
+.completed{
+  text-decoration: line-through;
+  opacity: 0.6;
+}
